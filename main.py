@@ -27,10 +27,10 @@ def valida_imagem(img):
     _, index = torch.max(out, 1)
 
     percentage = torch.nn.functional.softmax(out, dim=1)[0] * 100
-    posicao = int(index[0])
-
-    nome = labels[index[0]], percentage[index[0]].item()
-    st.write(nome)
+    # posicao = int(index[0])
+    #
+    # nome = labels[index[0]], percentage[index[0]].item()
+    # st.write(nome)
 
 def verifica_animal_imagem(imagens):
     data = []
